@@ -21,7 +21,7 @@ return <>
 
 <h1>Underground</h1>
 
-<Line />
+<Line lines={lines} />
 
 
 </>

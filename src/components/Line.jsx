@@ -1,7 +1,9 @@
 import React from 'react'
 
 
-function Line() {
+function Line({lines}) {
+
+
 
 return <>
 <div>
