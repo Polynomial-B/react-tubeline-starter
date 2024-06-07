@@ -3,7 +3,7 @@ import Line from './Line'
 
 function Underground() {
 
-const [lines, setLines] = React.useState([])
+const [lines, setLines] = React.useState(null)
 
 
 React.useEffect(()=> {
@@ -13,6 +13,10 @@ React.useEffect(()=> {
         setLines(lines)
     }
     fetchLines()
+
+    setInterval(()=> {
+        fetchLines()
+    }, 1000)
 }, [])
 
 
